@@ -1,0 +1,297 @@
+:root {
+    /* ============ VARIABLES =============== */
+    --primary-color-brightred:hsl(12, 88%, 59%);
+    --primary-color-darkblue:hsl(228, 39%, 23%);
+
+
+    --color-dark-grayishblue:hsl(227, 12%, 61%);
+    --color-very-darkblue:hsl(233, 12%, 13%);
+    --color-very-palered:hsl(13, 100%, 96%);
+    --color-very-lightgray:hsl(0, 0%, 98%);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style-type: none;
+}
+
+body {
+    /* overflow: hidden; */
+    /* font-family: Be Vietnam Pro; */
+    font-size: 16px;
+    background-image: url(./images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 100% ;
+    background-position-y: -120px ;
+}
+
+.container {
+    width: 85% ;
+    margin: 0 auto;
+}
+
+/* =================== TYPOGRAPHY ========================= */
+
+h1 {
+    font-size: 3rem;
+    color: var(--primary-color-darkblue);
+    margin-bottom: 2rem;
+}
+
+p {
+    color: var(--color-dark-grayishblue);
+    line-height: 1.4;
+}
+
+
+
+
+
+
+/* ==================================================================================== NAVBAR ============================================================== */
+.navbar {
+    display: flex;
+    padding: 3.5rem 0;
+    justify-content: space-between;
+}
+
+.nav--items {
+    display: flex;
+    gap: 1.5rem;
+}
+.nav--items a {
+    color: var(--primary-color-darkblue);
+    font-size: 15px;
+}
+
+.nav--action--btn {
+    padding: .7rem 1.5rem;
+    background-color: var(--primary-color-brightred);
+    border-radius: 100px;
+    color: var(--color-very-lightgray);
+}
+.nav--action--btn a {
+    font-size: 16px;
+}
+
+
+/* =================================================================================== HERO SECTION ============================================================================================ */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 4rem;
+    align-items: center;
+    /* margin: 0 auto; */
+}
+
+.hero--text {
+    max-width: 35%;
+}
+.hero--text p{
+    margin-bottom: 2.5rem;
+}
+.hero--action--btn {
+    padding: .7rem 1.5rem;
+    background-color: var(--primary-color-brightred);
+    border-radius: 100px;
+    color: var(--color-very-lightgray);
+    border: none;
+    /* box-shadow: 1px solid var(--color-very-palered); */
+}
+
+.hero--img img {
+    max-width: 100%;
+    /* transform: scale(0.8); */
+    width: 28rem;   
+}
+
+
+/* ============================================================ MAIN SECTION 2 ======================================================================================== */
+
+.main--section--2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row--1 {
+   max-width: 40%;
+}
+.row--1 h2 {
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   color: var(--primary-color-darkblue);
+}
+.row--1 p {
+   max-width: 70%;
+}
+
+.row--2 {
+    max-width: 45%;
+}
+
+.item--content > h4 {
+    color: var(--primary-color-darkblue);
+}
+.item--content > p {
+    color: var(--color-dark-grayishblue);
+}
+
+.item {
+    display: flex;
+    gap: 1rem;
+}
+
+.item :nth-child(1) > h4 {
+    display: block;
+    padding: .4rem .9rem;
+    background-color: var(--primary-color-brightred);
+    border-radius: 100px;
+}
+
+.item p {
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+   color: var(--primary-color-darkblue);
+}
+
+/* ============================================================ MAIN SECTION 3 ======================================================================================== */
+.main--section--3 {
+    margin-top: 2.3rem;
+}
+.main--section--3_title {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 2rem;
+    color: var(--primary-color-darkblue);
+}
+.slide {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex: 0 0 auto;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: var(--color-very-lightgray);
+    padding: 1.6rem 0 1rem;
+    background-color: var(--color-very-lightgray);
+    /* background-color: pink; */
+    position: relative;
+    
+}
+.testimonial p {
+    margin-top: .8rem;
+    user-select: none;
+}
+.testimonial img {
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    /* left: 0; */
+    right: 43%;
+}
+
+/* ========================================================================================================================================================================================================== */
+
+.call--to--action {
+    background-color: var(--primary-color-brightred);
+    padding: 2rem 0;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+.call--to--action .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.call--to--action .container h3{
+    font-size: 2rem;
+    max-width: 45%;
+}
+.call--to--action a {
+    padding: .7rem 1.5rem;
+    background-color: #fff;
+    border-radius: 100px;
+    color: var(--primary-color-brightred);
+}
+
+
+/*  ================================= FOOTER ==================================================================================================================================================== */ 
+
+footer{
+    padding: 2rem 0;
+    background-color: var(--color-very-darkblue);
+}
+
+footer .container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+footer  a{
+   color:  hsl(227, 12%, 61%);
+   font-size: 13px;
+}
+
+.footer--col--1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* .footer--col--1 div {
+    font-size: 10px;
+} */
+
+.footer--col--4 {
+    display: grid;
+    align-content: space-between;
+    height: 100%;
+    text-align: center;
+}
+.footer--col--4 div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .35rem;
+}
+.footer--col--4 div p {
+    padding: .3rem .7rem;
+    color: #fff;
+    background-color: var(--primary-color-brightred);
+    border-radius: 100px;
+    font-size: 10px;
+}
+
+.footer--col--4 input {
+   border-radius: 100px;
+   padding: .5rem .3rem;
+   font-size: 10px;
+   border: none;
+}
+.footer--col--4 small {
+  font-size: 10px ;
+  margin-top: auto;
+  /* position: absolute; */
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
